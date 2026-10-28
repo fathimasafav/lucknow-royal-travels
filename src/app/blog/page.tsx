@@ -60,11 +60,10 @@ export default function BlogListingPage() {
                     <button
                       key={cat}
                       onClick={() => setSelectedCategory(cat)}
-                      className={`text-[10px] sm:text-xs font-semibold uppercase tracking-widest px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 ${
-                        selectedCategory === cat
+                      className={`text-[10px] sm:text-xs font-semibold uppercase tracking-widest px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 active:scale-95 ${selectedCategory === cat
                           ? "bg-[#23446F] text-white shadow-md scale-105"
                           : "bg-stone-200/80 text-stone-700 hover:bg-stone-300/80"
-                      }`}
+                        }`}
                     >
                       {cat}
                     </button>

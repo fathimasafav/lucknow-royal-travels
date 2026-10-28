@@ -35,7 +35,7 @@ export function TravelChoices() {
         </FadeUp>
 
         {/* Filter Pills */}
-        <FadeUp distance={20} duration={0.8} delay={0.15}>
+        {/* <FadeUp distance={20} duration={0.8} delay={0.15}>
           <div className="mt-8 flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
             {filters.map((filter) => (
               <button
@@ -51,7 +51,7 @@ export function TravelChoices() {
               </button>
             ))}
           </div>
-        </FadeUp>
+        </FadeUp> */}
 
         {/* Service Cards Grid (4 cols on lg, 2 cols on md/sm, 1 col on xs) */}
         <motion.div

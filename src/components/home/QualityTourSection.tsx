@@ -75,9 +75,8 @@ export function QualityTourSection() {
                       </h3>
                     </div>
                     <ChevronDown
-                      className={`h-4 w-4 shrink-0 text-stone-400 transition-transform duration-300 ${
-                        isOpen ? "rotate-180 text-[#0075be]" : ""
-                      }`}
+                      className={`h-4 w-4 shrink-0 text-stone-400 transition-transform duration-300 ${isOpen ? "rotate-180 text-[#0075be]" : ""
+                        }`}
                     />
                   </div>
 
@@ -121,9 +120,8 @@ export function QualityTourSection() {
                       </h3>
                     </div>
                     <ChevronDown
-                      className={`h-4 w-4 shrink-0 text-stone-400 transition-transform duration-300 ${
-                        isOpen ? "rotate-180 text-[#0075be]" : ""
-                      }`}
+                      className={`h-4 w-4 shrink-0 text-stone-400 transition-transform duration-300 ${isOpen ? "rotate-180 text-[#0075be]" : ""
+                        }`}
                     />
                   </div>
 

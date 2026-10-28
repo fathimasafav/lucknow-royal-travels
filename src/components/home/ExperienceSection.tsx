@@ -74,12 +74,28 @@ export function ExperienceSection() {
           <div className="lg:col-span-6 relative">
             <Reveal direction="up" distance={30} duration={0.8} delay={0.1}>
               <div className="relative h-[420px] sm:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl group">
-                <Image
+                {/* <Image
                   src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=85"
                   alt="Royal Travels International Flight Assistance"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
+                /> */}
+                {/* <Image
+                  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85"
+                  alt="International air travel and flight assistance by Royal Travels"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                /> */}
+                <Image
+                  src="/images/experience/airport-gateway.png"
+                  alt="International airport and passenger aircraft at sunset"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </div>

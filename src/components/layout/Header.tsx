@@ -45,9 +45,9 @@ export function Header() {
         <Image
           src="/logo/logo-footer.png"
           alt="Royal Travels"
-          className="text-emerald-950"
-          width={150}
-          height={40}
+          className="text-emerald-950  h-[50px] w-[154px]"
+          width={154}
+          height={50}
         />
 
         {/* Central Floating Navigation Pill (Desktop) */}
@@ -250,7 +250,7 @@ export function Header() {
             Branches
           </Link>
 
-          <Link
+          {/* <Link
             href="/blog"
             className=" flex items-center gap-2
     rounded-full
@@ -264,7 +264,7 @@ export function Header() {
     focus:outline-none"
           >
             Blog
-          </Link>
+          </Link> */}
 
           <Link
             href="/contact-us"

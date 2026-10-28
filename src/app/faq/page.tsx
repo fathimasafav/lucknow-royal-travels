@@ -56,9 +56,8 @@ export default function FAQPage() {
                             </h3>
                           </div>
                           <div
-                            className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-100 text-stone-900 transition-all duration-300 ${
-                              isOpen ? "rotate-180 bg-[#23446F] text-white" : ""
-                            }`}
+                            className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-stone-100 text-stone-900 transition-all duration-300 ${isOpen ? "rotate-180 bg-[#23446F] text-white" : ""
+                              }`}
                           >
                             <ChevronDown className="h-4 w-4" />
                           </div>

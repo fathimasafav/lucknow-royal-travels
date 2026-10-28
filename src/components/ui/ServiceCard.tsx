@@ -45,8 +45,9 @@ export function ServiceCard({
   variant = "grid",
   className,
 }: ServiceCardProps) {
-  const { title, categoryLabel, shortDescription, image, iconName, slug, popular } = service;
+  const { title, categoryLabel, shortDescription, image, imageAlt, iconName, slug, popular } = service;
   const IconComponent = (iconName && iconMap[iconName]) || FileCheck;
+  const effectiveAlt = imageAlt || title;
 
   // Featured variant for prominent sections
   if (variant === "featured") {
@@ -60,7 +61,7 @@ export function ServiceCard({
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
             src={image}
-            alt={title}
+            alt={effectiveAlt}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
@@ -112,7 +113,7 @@ export function ServiceCard({
         <div className="absolute inset-0 z-0">
           <Image
             src={image}
-            alt={title}
+            alt={effectiveAlt}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className="object-cover transition-transform duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-95"
@@ -150,7 +151,7 @@ export function ServiceCard({
       <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-stone-200">
         <Image
           src={image}
-          alt={title}
+          alt={effectiveAlt}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -176,7 +177,7 @@ export function ServiceCard({
             {shortDescription}
           </p>
         </div>
-{/* 
+        {/* 
         <div className="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
           <Link
             href={`/services#${slug}`}

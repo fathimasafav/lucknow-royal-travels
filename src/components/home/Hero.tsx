@@ -65,9 +65,9 @@ export function Hero() {
           <div className="w-full pt-24 sm:pt-28 text-left"> */}
         <Container
           clean
-          className="relative z-10 min-h-[80vh] w-full flex items-center"
+          className="relative z-10 min-h-[100vh] w-full flex items-center"
         >
-          <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 pt-24 sm:pt-28 text-left">
+          <div className="w-full max-w-[1320px] mx-auto px-6 sm:px-10 md:px-16 lg:px-20 pt-24 sm:pt-28 text-left py-auto">
             {/* 1. Badge / Eyebrow (0.0s) */}
             <motion.span
               initial={shouldReduceMotion ? {} : { opacity: 0, y: 20 }}
@@ -91,6 +91,7 @@ export function Hero() {
                 delay: 0.15,
                 ease,
               }}
+
               className="font-serif text-4xl sm:text-6xl lg:text-7xl font-semibold leading-[1.1] tracking-tight text-white mb-10"
             >
               Your Journey Abroad

@@ -24,7 +24,7 @@ export default function Home() {
         <NewLifeSection />
         <TravelChoices />
         <QualityTourSection />
-        <BlogSection />
+        {/* <BlogSection /> */}
         <FinalCTA />
       </main>
       <Footer />

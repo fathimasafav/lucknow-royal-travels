@@ -2,7 +2,7 @@
 
 import { StaggerContainer, StaggerItem } from "@/components/animations";
 import { Container } from "@/components/ui/Container";
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, MapPin, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -26,10 +26,35 @@ export function Footer() {
                 Overseas Recruitment & Travel Agency
               </p>
               <p className="mt-3 text-xs text-stone-400 leading-relaxed font-sans">
-                Approved by Ministry of Labour, Govt. of India (Reg No: B-162/MUM/PER/1000+/5515/2000). Authorized ID holder associated with the Saudi Consulate in Mumbai and Embassy in New Delhi.
+                Govt. Registered Agency
+                <br />
+                Reg. No: B-162/MUM/PER/1000+/5515/2000
               </p>
+
+
+
+              <div className="mt-3 flex items-start gap-2 text-xs text-stone-400 leading-5 font-sans">
+                <MapPin className="h-4 w-4 text-[#0075be] shrink-0 mt-0.5" />
+
+                <div className="min-w-0">
+                  <p className="font-semibold text-white mb-1">
+                    Lucknow Branch Office
+                  </p>
+
+                  <address className="not-italic">
+                    Office No. 202, 2nd Floor,
+                    Manas Nagar Heights,
+                    Near Lucknow Cancer Hospital,
+                    Jiamau Road, Manas Nagar Colony,
+                    Jiamau, Lucknow – 226001, UP
+                  </address>
+                </div>
+              </div>
+
+
+
             </div>
-            <div className="mt-6 flex items-center gap-3">
+            {/* <div className="mt-4 flex items-center gap-3">
               <a
                 href="https://facebook.com"
                 target="_blank"
@@ -66,7 +91,7 @@ export function Footer() {
               >
                 <Youtube className="h-4 w-4" />
               </a>
-            </div>
+            </div> */}
           </StaggerItem>
 
           {/* Col 2: ABOUT (2 cols) */}

@@ -67,12 +67,14 @@ ${message}
                     <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#23446F] text-white mb-4 transition-transform duration-300 group-hover:scale-110">
                       <MapPin className="h-5 w-5" />
                     </div>
+
                     <h4 className="font-serif text-lg font-semibold text-[#1C1C1C] group-hover:text-[#23446F] transition-colors">
-                      Mumbai Headquarters
+                      Lucknow Office
                     </h4>
                     <p className="mt-1 text-xs text-[#6B7280] leading-relaxed font-sans">
-                      Royal Travels House, Fort / Dongri Hub, Mumbai, Maharashtra 400009
+                      Office No. 202, 2nd Floor, Manas Nagar Heights, Near Lucknow Cancer Hospital, Jiamau Road, Manas Nagar Colony, Jiamau, Lucknow, UP – 226001
                     </p>
+
                   </div>
                 </StaggerItem>
 
@@ -160,15 +162,15 @@ ${message}
                               >
                                 Full Name *
                               </label>
-                                <input
-                                  id="fullName"
-                                  name="fullName"
-                                  required
-                                  type="text"
-                                  placeholder="Your full name"
-                                  className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
-                                />
-                                </div>
+                              <input
+                                id="fullName"
+                                name="fullName"
+                                required
+                                type="text"
+                                placeholder="Your full name"
+                                className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
+                              />
+                            </div>
 
                             <div>
                               <label
@@ -177,14 +179,14 @@ ${message}
                               >
                                 Phone / WhatsApp Number *
                               </label>
-                                  <input
-                                    id="phone"
-                                    name="phone"
-                                    required
-                                    type="tel"
-                                    placeholder="+91 98765 43210"
-                                    className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
-                                  />
+                              <input
+                                id="phone"
+                                name="phone"
+                                required
+                                type="tel"
+                                placeholder="+91 98765 43210"
+                                className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
+                              />
                             </div>
                           </div>
 
@@ -196,13 +198,13 @@ ${message}
                               >
                                 Email Address
                               </label>
-                                  <input
-                                    id="email"
-                                    name="email"
-                                    type="email"
-                                    placeholder="your.email@example.com"
-                                    className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
-                                  />
+                              <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="your.email@example.com"
+                                className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
+                              />
                             </div>
 
                             <div>
@@ -212,12 +214,12 @@ ${message}
                               >
                                 Service Category *
                               </label>
-                                  <select
-                                    id="serviceType"
-                                    name="serviceType"
-                                    required
-                                    className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
-                                  >
+                              <select
+                                id="serviceType"
+                                name="serviceType"
+                                required
+                                className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
+                              >
                                 <option>Saudi Visa Stamping</option>
                                 <option>Saudi Multiple Business Visit</option>
                                 <option>Visa Wakkala Verification</option>
@@ -236,13 +238,13 @@ ${message}
                             >
                               Details / Message *
                             </label>
-                                <textarea
-                                  id="message"
-                                  name="message"                               
-                                  rows={4}
-                                  placeholder="Mention passport details, visa number, or specific guidance required..."
-                                  className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
-                                />
+                            <textarea
+                              id="message"
+                              name="message"
+                              rows={4}
+                              placeholder="Mention passport details, visa number, or specific guidance required..."
+                              className="w-full rounded-xl bg-stone-50 border border-stone-200 px-4 py-3 text-xs text-stone-900 placeholder-stone-400 focus:outline-none focus:border-[#23446F] font-sans transition-colors"
+                            />
                           </div>
 
                           <Button type="submit" variant="secondary" size="lg" className="mt-2 gap-2 bg-[#23446F] text-white hover:bg-[#1A3354]">
@@ -280,9 +282,10 @@ ${message}
 
                   <Reveal direction="up" distance={30} duration={0.8} delay={0.25}>
                     <div className="relative h-[280px] w-full rounded-3xl overflow-hidden shadow-sm border border-stone-200/80 bg-stone-200">
+
                       <iframe
-                        title="Mumbai Office Map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.784534830154!2d72.8340!3d18.9500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce4000000001%3A0x123456789abcdef!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+                        title="Lucknow Office Map"
+                        src="https://maps.google.com/maps?q=Office%20No.%20202%2C%202nd%20Floor%2C%20Manas%20Nagar%20Heights%2C%20Jiamau%2C%20Lucknow%2C%20Uttar%20Pradesh%20226001&output=embed"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
@@ -290,6 +293,7 @@ ${message}
                         loading="lazy"
                         className="grayscale contrast-125 opacity-90"
                       />
+
                     </div>
                   </Reveal>
                 </div>

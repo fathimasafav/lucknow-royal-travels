@@ -71,6 +71,7 @@ export interface Service {
   shortDescription: string;
   fullDescription?: string;
   image: string;
+  imageAlt?: string;
   iconName?: string;
   features?: string[];
   requirements?: string[];

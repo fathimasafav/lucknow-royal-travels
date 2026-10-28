@@ -10,7 +10,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "Branch Network — Royal Travels | Mumbai HQ, Delhi & Kerala",
+  title: "Branch Network — Royal Travels | Mumbai HQ, Lucknow, Delhi & Kerala",
   description: "Explore Royal Travels' 30+ branch network across India and the Middle East for visa processing, attestation, and manpower recruitment.",
 };
 
@@ -23,6 +23,15 @@ const branches = [
     tag: "Head Office — Saudi Embassy ID Holder",
     isHQ: true,
   },
+  {
+    name: "Lucknow Branch Office",
+    address:
+      "Office No. 202, 2nd Floor, Manas Nagar Heights, Near Lucknow Cancer Hospital, Jiamau Road, Jiamau, Lucknow, UP 226001",
+    phone: "+91 522 4080 230",
+    email: "Lucknow@royaltravels.com",
+    tag: "Lucknow Branch",
+  },
+
   {
     name: "New Delhi Branch Office",
     address: "Connaught Place / Zakir Nagar Commercial Complex, New Delhi 110025",
@@ -76,9 +85,8 @@ export default function BranchPage() {
                 {branches.map((branch, idx) => (
                   <StaggerItem key={idx} distance={30}>
                     <div
-                      className={`bg-white rounded-2xl p-8 shadow-sm border transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5 flex flex-col justify-between h-full group ${
-                        branch.isHQ ? "border-black ring-1 ring-[#0F9E5E]/30" : "border-stone-200/80"
-                      }`}
+                      className={`bg-white rounded-2xl p-8 shadow-sm border transition-all duration-300 hover:shadow-2xl hover:-translate-y-1.5 flex flex-col justify-between h-full group ${branch.isHQ ? "border-black ring-1 ring-[#0F9E5E]/30" : "border-stone-200/80"
+                        }`}
                     >
                       <div>
                         <div className="flex items-center justify-between gap-2 mb-4">

@@ -52,12 +52,20 @@ export function NewLifeSection() {
           <div className="lg:col-span-6">
             <Reveal direction="up" distance={30} duration={0.8}>
               <div className="relative h-[420px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg group hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-                <Image
+                {/* <Image
                   src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
                   alt="International Recruitment & Opportunity"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
+                /> */}
+                <Image
+                  src="/images/newlife/employment-consultation-meeting.png"
+                  alt="Professional recruitment and overseas employment consultation"
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -79,12 +87,19 @@ export function NewLifeSection() {
               <StaggerItem className="sm:col-span-2">
                 <div className="relative h-[240px] rounded-2xl overflow-hidden shadow-md group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <Image
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85"
+                    src="/images/newlife/candidate-assessment.png"
                     alt="Professional Candidate Interview"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
+                  {/* <Image
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=85"
+                    alt="Professional recruitment team assessing candidates"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  /> */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
                     <h4 className="font-serif text-lg font-semibold">
@@ -97,12 +112,19 @@ export function NewLifeSection() {
               {/* Bottom-left image card */}
               <StaggerItem>
                 <div className="relative h-[250px] rounded-2xl overflow-hidden shadow-md group hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
-                  <Image
+                  {/* <Image
                     src="https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=600&q=85"
                     alt="Airport Departure Lounge"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  /> */}
+                  <Image
+                    src="/images/experience/airport-gateway.png"
+                    alt="Passenger aircraft representing international travel"
+                    fill
+                    sizes="(max-width: 640px) 100vw, 25vw"
+                    className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 text-white">
